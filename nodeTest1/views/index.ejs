@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src='/javascripts/test.js'></script>
+  </head>
+  <body>
+    <div class='top_menu' data-id="<%=title%>">Welcome</div>
+    <hr/>
+    <div>
+      <input id='test' class='radio' type='button' value='search' />
+        <label class='right'>
+          all
+          <input class='radio' type='radio' name='search_type' value='all' checked='checked' />
+        </label>
+        <label class='right'>
+          app
+          <input class='radio' type='radio' name='search_type' value='app' />
+        </label>
+        <label class='right'>
+          jni
+          <input class='radio' type='radio' name='search_type' value='jni' />
+        </label>
+    </div>
+    <br>
+    <div id='left_menu'>
+      <div class='top_menu' data-id="haha">
+        CrashItems
+      </div>
+      <hr />
+      <%
+        for (var item in items) {
+      %>
+      <div class='left-item' data-id='<%=item%>'><%=item%></div>
+      <br/>
+      <%
+        }
+      %>
+    </div>
+    <div id='mid_body'></div>
+  </body>
+</html>

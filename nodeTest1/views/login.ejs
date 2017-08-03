@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+    <div id='sign-box'>
+      <div class='title'><%= title %></div>
+      <br/>
+      <form action='/login' method='post'>
+        <div class='contain'>
+          username
+          <input class='sign' name="username"/>
+        </div>
+        <br/>
+        <div class='contain'>
+          password
+          <input class='sign' name="userpass" type="password" />
+        </div>
+        <br/>
+        <div class='contain'>
+          <input id="btn-ok" type='submit' value='Login'/>
+        </div>
+        <br/>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+	background: #EEEEEE;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div#left_menu {
+	float: left;
+	background: #CCCCCC;
+	left: 2px;
+	width: 20%;
+	height: 600px;
+	font-family:'微软雅黑';
+}
+
+div.left-item {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #FF0000;
+}
+
+div.top_menu {
+	left: 2px;
+	right: 2px;
+	height: 40px;
+	line-height: 40px;
+	font-family: '微软雅黑';
+
+	background: #AAAACC;
+	color: #FFFFFF;
+	text-align: center;
+
+	/*border-radius: 20px;*/
+}
+
+input.radio {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+label.right {
+	float:right;
+	height: 30px;
+	line-height: 30px;
+}
+
+div#mid_body {
+	position: static;
+	width: 78%;
+	right: 2px;
+	height: 100%;
+	font-family: '微软雅黑';
+
+	background: #CCCCCC;
+	float: right;
+}
