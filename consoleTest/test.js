@@ -12,5 +12,7 @@ console.log(value.all.length);
 var users = value.all;
 for (var i = 0; i < users.length; i++) {
 	var user = users[i];
-	console.log(user.name);
+	for (var x in user) {
+		console.log(x + ":" + user[x]);
+	}
 }

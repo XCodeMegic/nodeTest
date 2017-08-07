@@ -4,24 +4,24 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src='/javascripts/test.js'></script>
+    <script src='/javascripts/base.js'></script>
   </head>
   <body>
     <div class='top_menu' data-id="<%=title%>">Welcome</div>
     <hr/>
     <div>
-      <input id='test' class='radio' type='button' value='search' />
-        <label class='right'>
+      <input id='btn-search' class='radio' type='button' value='search' />
+        <label class='right-radio'>
           all
-          <input class='radio' type='radio' name='search_type' value='all' checked='checked' />
+          <input class='radio' type='radio' name='search_type' value='all' data-value='3' checked='checked' />
         </label>
-        <label class='right'>
+        <label class='right-radio'>
           app
-          <input class='radio' type='radio' name='search_type' value='app' />
+          <input class='radio' type='radio' name='search_type' value='app' data-value='0'/>
         </label>
-        <label class='right'>
+        <label class='right-radio'>
           jni
-          <input class='radio' type='radio' name='search_type' value='jni' />
+          <input class='radio' type='radio' name='search_type' value='jni' data-value='1'/>
         </label>
     </div>
     <br>
@@ -30,14 +30,13 @@
         CrashItems
       </div>
       <hr />
-      <%
-        for (var item in items) {
-      %>
-      <div class='left-item' data-id='<%=item%>'><%=item%></div>
-      <br/>
-      <%
-        }
-      %>
+      <div id='left_body'></div>
+      <hr/>
+      <div>
+        <label id='page-next' class='right'>next&nbsp;</label>
+        <label id='page-index' class='right' data-index='0' data-count='0'>0/0&nbsp;</label>
+        <label id='page-prev' class='right'>prev&nbsp;</label>
+      </div>
     </div>
     <div id='mid_body'></div>
   </body>

@@ -8,9 +8,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-	var objs = ['1', '2', '3', '4'];
-	res.render('login', {title: 'SIGN IN', items : objs});
-	next();
+	res.render('login', {title: 'SIGN IN'});
+	//next();
 });
 
 module.exports = router;
