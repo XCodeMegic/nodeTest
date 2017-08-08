@@ -69,7 +69,11 @@ module.exports = {
 
 //----------------------insert info ------------------------------
 	insertCrash : function(obj) {
-		var query = 'insert into tb_crash_info '
-
+		var query = 'insert into tb_crash_info (crash_type,crash_date,app_ver,app_name,platform,android_ver,device_id,stack_trace) values("' 
+			+ obj.crash_type + '","' + obj.crash_date + '","' + obj.app_ver + '","' + obj.app_name + '","' + obj.platform + '","' + 
+			obj.android_ver + '","' + obj.device_id + '","' + obj.stack_trace + '")';
+		querydb(query, function(data) {
+			//nothing to do
+		});
 	}
 };

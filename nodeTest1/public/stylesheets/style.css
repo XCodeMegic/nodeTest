@@ -95,3 +95,8 @@ div.mid_item_title {
 	height: 20px;
 	line-height: 20px;
 }
+
+div#mid_item_stack {
+	min-height: 20px;
+	height: 100%;
+}

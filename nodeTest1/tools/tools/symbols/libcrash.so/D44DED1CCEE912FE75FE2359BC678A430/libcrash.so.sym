@@ -1,0 +1,33 @@
+MODULE Linux x86 D44DED1CCEE912FE75FE2359BC678A430 libcrash.so
+INFO CODE_ID 1CED4DD4E9CEFE1275FE2359BC678A437C089EAF
+FILE 0 /home/uuu/JNI_USE/test1/jni/main.c
+FUNC 420 c 0 Java_com_live_Crasher_NullPtr
+420 c 7 0
+PUBLIC 360 0 __on_dlclose
+PUBLIC 390 0 __atexit_handler_wrapper
+PUBLIC 3b0 0 atexit
+PUBLIC 3f0 0 __stack_chk_fail_local
+PUBLIC 410 0 __x86.get_pc_thunk.bx
+PUBLIC 420 0 Java_com_live_Crasher_NullPtr
+STACK CFI INIT 390 13 .cfa: $esp 4 + .ra: .cfa -4 + ^
+STACK CFI 394 .cfa: $esp 16 +
+STACK CFI 3a2 .cfa: $esp 4 +
+STACK CFI INIT 360 24 .cfa: $esp 4 + .ra: .cfa -4 + ^
+STACK CFI 361 $ebx: .cfa -8 + ^ .cfa: $esp 8 +
+STACK CFI 370 .cfa: $esp 32 +
+STACK CFI 382 .cfa: $esp 8 +
+STACK CFI 383 $ebx: $ebx .cfa: $esp 4 +
+STACK CFI INIT 3b0 36 .cfa: $esp 4 + .ra: .cfa -4 + ^
+STACK CFI 3b1 $ebx: .cfa -8 + ^ .cfa: $esp 8 +
+STACK CFI 3c0 .cfa: $esp 32 +
+STACK CFI 3e4 .cfa: $esp 8 +
+STACK CFI 3e5 $ebx: $ebx .cfa: $esp 4 +
+STACK CFI INIT 3f0 1b .cfa: $esp 4 + .ra: .cfa -4 + ^
+STACK CFI 3f1 $ebx: .cfa -8 + ^ .cfa: $esp 8 +
+STACK CFI 400 .cfa: $esp 16 +
+STACK CFI 409 .cfa: $esp 8 +
+STACK CFI 40a $ebx: $ebx .cfa: $esp 4 +
+STACK CFI INIT 410 4 .cfa: $esp 4 + .ra: .cfa -4 + ^
+STACK CFI INIT 420 c .cfa: $esp 4 + .ra: .cfa -4 + ^
+STACK CFI INIT 320 40 .cfa: $esp 8 + .ra: .cfa -4 + ^
+STACK CFI 326 .cfa: $esp 12 +

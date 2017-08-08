@@ -1,4 +1,5 @@
 var express = require('express');
+var formidable = require('formidable');
 var usrCtrl = require('../controller/userController');
 var infoCtrl = require('../controller/baseController');
 var router = express.Router();
@@ -27,5 +28,9 @@ router.post('/query/info_count', infoCtrl.handleInfoCount);
 router.post('/query/info', infoCtrl.handleInfo);
 
 router.post('/query/detail', infoCtrl.handleInfoDetail);
+
+router.post('/upload/crash-app', infoCtrl.handleInsert_JavaCrash);
+
+router.post('/upload/crash-jni', infoCtrl.handleInsert_CCrash);
 
 module.exports = router;

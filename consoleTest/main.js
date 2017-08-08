@@ -12,7 +12,7 @@ console.log("host: " + config.host + ", user: " + config.user + ", pass: " + con
 
 connection.connect();
 //查询
-connection.query('select count(*) from `tb_crash_info` where id="0"', function(err, rows, fields) {
+/*connection.query('select count(*) from `tb_crash_info` where id="0"', function(err, rows, fields) {
     if (err) throw err;
     //console.log(fields);
 	//console.log("query end: " + rows);
@@ -30,6 +30,25 @@ connection.query('select count(*) from `tb_crash_info` where id="0"', function(e
 		}
 		console.log(value);
 }
+});*/
+var obj = new Object();
+obj.crash_type = 'java-crash';
+obj.crash_date = '201708103322';
+obj.app_ver = '1.0';
+obj.app_name = 'helloworld';
+obj.platform = 'android-9.0';
+obj.android_ver = '8.0';
+obj.device_id = 'octs-haoga1235';
+obj.stack_trace = 'hgaodfiahgiasdofiaogasdfhagklsd;jf;ajsdhgasdkfa;ghsdfja;dsjf';
+//insert 
+var query = 'insert into tb_crash_info (crash_type,crash_date,app_ver,app_name,platform,android_ver,device_id,stack_trace) values("' 
+			+ obj.crash_type + '","' + obj.crash_date + '","' + obj.app_ver + '","' + obj.app_name + '","' + obj.platform + '","' + 
+			obj.android_ver + '","' + obj.device_id + '","' + obj.stack_trace + '")';
+connection.query(query, function(err, rows, fields) {
+	if (err) {
+		throw err;
+	}
+	console.log(rows);
 });
 //关闭连接
 connection.end();

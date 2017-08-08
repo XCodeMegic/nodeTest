@@ -51,7 +51,7 @@ function show_details() {
 			for (var x in data) {
 				var doc = "<div class='mid_item_title'>" + x + ":</div>";
 				$('#mid_body').append(doc);
-				doc = "<div class='mid_item'>" + data[x] + '</div>';
+				doc = "<div id='mid_item_stack'><pre>" + data[x] + '</pre></div>';
 				$('#mid_body').append(doc);
 			}
 		},
