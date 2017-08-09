@@ -16,6 +16,10 @@ module.exports = {
 		var sign = req.body.sign;
 
 		var dbusers = db.queryUser(username, function(user) {
+			if (user == null) {
+				res.send({'result' : 'error'});
+				return;
+			}
 			var dbsign = md5(logindate + user.password);
 			if (dbsign == sign) {
 				var user = {'username' : username};

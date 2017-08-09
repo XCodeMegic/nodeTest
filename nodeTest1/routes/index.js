@@ -33,4 +33,6 @@ router.post('/upload/crash-app', infoCtrl.handleInsert_JavaCrash);
 
 router.post('/upload/crash-jni', infoCtrl.handleInsert_CCrash);
 
+router.post('/query/delete', infoCtrl.handleDelete);
+
 module.exports = router;

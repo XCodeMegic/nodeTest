@@ -4,6 +4,7 @@ var exec = require('child_process').exec;
 var fs = require('fs');
 var db = require('../DB/dbmanager');
 var fread = require('./fileController').readfile;
+var fdrop = require('./fileController').deleteFile;
 
 module.exports = {
 	handleInfoCount : function(req, res, next) {
@@ -20,7 +21,13 @@ module.exports = {
 
 	handleInfo : function(req, res, next) {
 		var search_type = req.body.search_type;
-		db.queryCrashInfo(search_type, 0, function(data) {
+		var search_page = req.body.pageno;
+		if (search_type == 0) {
+			search_type = 'java-crash';
+		} else if (search_type == 1) {
+			search_type = 'c-crash';
+		}
+		db.queryCrashInfo(search_type, search_page, function(data) {
 				res.send(data);
 			});
 	},
@@ -28,7 +35,10 @@ module.exports = {
 	handleInfoDetail : function(req, res, next) {
 		var id = req.body.crash_id;
 		db.queryCrashDetail(id, function(data) {
-			//if data.crash_type == c-crash,read file content to fill data.stack_trace
+			if (data == null) {
+				res.send(404,'Sorry, we cannot find that!');
+				return;
+			}
 			if (data.crash_type == 'c-crash') {
 				fread(data.stack_trace, 30, function(value) {
 					if (value) {
@@ -52,6 +62,7 @@ module.exports = {
 			var json = fields.json;
 			json = JSON.parse(json);
 			json.crash_type = 'java-crash';
+			json.dumpfile = '';
 
 			db.insertCrash(json);
 		});
@@ -69,20 +80,39 @@ module.exports = {
 		console.log('tmpfile:' + tmpFilePath);
 		console.log('crashFile:' + crashFilePath);
 		form.parse(req, function(err, fields, files) {
-			renameFile(files.file.path, tmpFilePath + files.file.name);
-			var logFile = crashFilePath + getFileName(files.file.name) + '.log';
-			var json = fields.json;
-			json = JSON.parse(json);
-			json.crash_type = 'c-crash';
-			json.stack_trace = logFile;
-			console.log(json);
-			exec('tools/perform.sh ' + tmpFilePath + files.file.name + ' ' + logFile, {maxBuffer:5000*20*1024}, function(err, stdout, stderr) {
-				if (err) {
-					throw err;
+			db.queryExists(files.file.name, function(data) {
+				if (data.length == 0) {
+					renameFile(files.file.path, tmpFilePath + files.file.name);
+					var logFile = crashFilePath + getFileName(files.file.name) + '.log';
+					var json = fields.json;
+					json = JSON.parse(json);
+					json.crash_type = 'c-crash';
+					json.stack_trace = logFile;
+					json.dumpfile = files.file.name;
+					console.log(json);
+					exec('tools/perform.sh ' + tmpFilePath + files.file.name + ' ' + logFile, {maxBuffer:10*5000*20*1024}, function(err, stdout, stderr) {
+						if (err) {
+							throw err;
+						}
+						console.log(stdout);
+						db.insertCrash(json);
+					});
 				}
-				console.log(stdout);
-				db.insertCrash(json);
-			});
+			})
+			res.send('OK');
+		});
+	},
+	handleDelete : function(req, res, next) {
+		var id = req.body.crash_id;
+		db.queryCrashDetail(id, function(data) {
+			if (data != null) {
+				db.deleteInfo(id);
+				if (data.crash_type == 'c-crash') {
+					var filename = data.stack_trace;
+					fdrop(filename, null);
+				}
+			}
+			res.send({'result':'OK'});
 		});
 	}
 }

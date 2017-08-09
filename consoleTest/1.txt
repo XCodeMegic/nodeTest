@@ -1,0 +1,3 @@
+tools/test.sh
+/home/uuu/Documents/node-test/consoleTest/temp/a4b79d9d-7c4a-4d05-3655428b-e4e444a3.dmp
+/home/uuu/Documents/node-test/consoleTest/crash-log/haha.log

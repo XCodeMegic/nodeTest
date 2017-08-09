@@ -9,7 +9,7 @@
   <body>
     <div class='top_menu' data-id="<%=title%>">Welcome</div>
     <hr/>
-    <div>
+    <div class='tool-row'>
       <input id='btn-search' class='radio' type='button' value='search' />
         <label class='right-radio'>
           all
@@ -32,12 +32,18 @@
       <hr />
       <div id='left_body'></div>
       <hr/>
-      <div>
-        <label id='page-next' class='right'>next&nbsp;</label>
-        <label id='page-index' class='right' data-index='0' data-count='0'>0/0&nbsp;</label>
-        <label id='page-prev' class='right'>prev&nbsp;</label>
+      <div class='tool-row'>
+        <label id='page-next' class='right-none'>&nbsp;&nbsp;next</label>
+        <label id='page-index' data-index='0' data-count='0'>0/0</label>
+        <label id='page-prev' class='right-none'>prev&nbsp;&nbsp;</label>
       </div>
     </div>
-    <div id='mid_body'></div>
+    <div class='mid_menu'>
+      <div class='top_menu'>crash_info</div>
+      <input id='btn-delete' style='float:right' type='button' value='delete record'/>
+      <hr/>
+      <div id='mid_body'>
+      </div>
+    </div>
   </body>
 </html>

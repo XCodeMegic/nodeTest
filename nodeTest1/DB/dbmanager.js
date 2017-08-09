@@ -30,6 +30,10 @@ module.exports = {
 			query = 'select count(*) from tb_crash_info';
 		}
 		querydb(query, function(data) {
+			if (data.length == 0) {
+				callback(0);
+				return;
+			}
 			var countvalue = data[0];
 			var count = 0;
 			for (var i in countvalue) {
@@ -52,8 +56,12 @@ module.exports = {
 	},
 
 	queryCrashDetail : function(id, callback) {
-		var query = "select app_name,app_ver,android_ver,platform,device_id,crash_type,crash_date,stack_trace from tb_crash_info where id='" + id + "'";
+		var query = "select id,app_name,app_ver,android_ver,platform,device_id,crash_type,crash_date,stack_trace from tb_crash_info where id='" + id + "'";
 		querydb(query, function(data) {
+			if (data.length == 0) {
+				callback(null);
+				return;
+			}
 			var info = data[0];
 			callback(info);
 		});
@@ -62,16 +70,31 @@ module.exports = {
 	queryUser : function(username, callback) {
 		var query = "select * from tb_query_user where username='" + username + "'";
 		querydb(query, function(data) {
+			if (data.length == 0) {
+				callback(null);
+				return;
+			}
 			var user = data[0];
 			callback(user);
 		});
 	},
 
+	queryExists : function (filename, callback) {
+		var query = "select * from tb_crash_info where crash_type='c-crash' and dumpfile='" + filename + "'";
+		querydb(query, callback);
+	},
+
 //----------------------insert info ------------------------------
 	insertCrash : function(obj) {
-		var query = 'insert into tb_crash_info (crash_type,crash_date,app_ver,app_name,platform,android_ver,device_id,stack_trace) values("' 
+		var query = 'insert into tb_crash_info (crash_type,crash_date,app_ver,app_name,platform,android_ver,device_id,dumpfile,stack_trace) values("' 
 			+ obj.crash_type + '","' + obj.crash_date + '","' + obj.app_ver + '","' + obj.app_name + '","' + obj.platform + '","' + 
-			obj.android_ver + '","' + obj.device_id + '","' + obj.stack_trace + '")';
+			obj.android_ver + '","' + obj.device_id + '","' + obj.dumpfile + '","' + obj.stack_trace + '")';
+		querydb(query, function(data) {
+			//nothing to do
+		});
+	},
+	deleteInfo : function(id) {
+		var query = 'delete from tb_crash_info where id="' + id + '"';
 		querydb(query, function(data) {
 			//nothing to do
 		});

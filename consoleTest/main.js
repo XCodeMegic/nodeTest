@@ -44,9 +44,15 @@ obj.stack_trace = 'hgaodfiahgiasdofiaogasdfhagklsd;jf;ajsdhgasdkfa;ghsdfja;dsjf'
 var query = 'insert into tb_crash_info (crash_type,crash_date,app_ver,app_name,platform,android_ver,device_id,stack_trace) values("' 
 			+ obj.crash_type + '","' + obj.crash_date + '","' + obj.app_ver + '","' + obj.app_name + '","' + obj.platform + '","' + 
 			obj.android_ver + '","' + obj.device_id + '","' + obj.stack_trace + '")';
+query = 'select * from tb_crash_info where dumpfile="haha.log"';
 connection.query(query, function(err, rows, fields) {
 	if (err) {
 		throw err;
+	}
+	if (rows == null) {
+		console.log('rows is null');
+	} else if (rows.length == 0) {
+		console.log('rows is empty');
 	}
 	console.log(rows);
 });
