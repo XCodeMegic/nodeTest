@@ -1,7 +1,6 @@
 body {
-	background: #EEEEEE;
+	background: url('/images/5-120601095934.jpg');
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -150,4 +149,20 @@ div.mid_item_title {
 div#mid_item_stack {
 	min-height: 20px;
 	height: 100%;
+}
+
+table.auto-hiden {
+	table-layout: fixed;
+}
+td.auto-hiden {
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+th.th-type {
+	width:25%;
+}
+
+th.th-data {
+	width:50%;
 }

@@ -46,11 +46,11 @@ module.exports = {
 	queryCrashInfo : function(type, index, callback) {
 		var query = '';
 		if (type == 'java-crash' || type == 'c-crash') {
-			query = "select id,app_name,crash_date from tb_crash_info where crash_type='" + type + "'";
+			query = "select id,app_ver,crash_date,crash_type from tb_crash_info where crash_type='" + type + "'";
 		} else {
-			query = 'select id,app_name,crash_date from tb_crash_info';
+			query = 'select id,app_ver,crash_date,crash_type from tb_crash_info';
 		}
-		query += ' limit ' + index * 10 + ',' + (index + 1) * 10;
+		query += ' limit ' + index * 10 + ',10';
 		console.log(query);
 		querydb(query, callback);
 	},

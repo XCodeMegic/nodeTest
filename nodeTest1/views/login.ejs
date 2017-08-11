@@ -2,31 +2,33 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="Shortcut Icon" href="favicon.ico" >
+    <link rel="Bookmark" href="favicon.ico" >
     <link rel='stylesheet' href='/stylesheets/login.css' />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src='/javascripts/jquery.md5.js'></script>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css' />
+    <script src="/jquery/jquery.min.js"></script>
+    <script src='/javascripts/jquery.md5.js'></script>
+    <script src='/bootstrap/js/bootstrap.min.js'></script>
     <script src='/javascripts/login.js'></script>
   </head>
   <body>
-    <div id='sign-box'>
-      <div class='title'><%= title %></div>
+    <div id='sign-box' class='panel panel-primary'>
+      <div class="panel-heading">
+        <h3 class="panel-title text-center">用户登陆</h3>
+      </div>
       <br/>
-      <form action='/login' method='post'>
-        <div class='contain'>
-          username
-          <input class='sign' name="username"/>
-        </div>
-        <br/>
-        <div class='contain'>
-          password
-          <input class='sign' name="userpass" type="password" />
-        </div>
-        <br/>
-        <div class='contain'>
-          <input id="btn-ok" type='button' value='Login'/>
-        </div>
-        <br/>
-      </form>
+      <div class='panel'>
+        <div class="form-group contain">
+            <input type="text" class="form-control lg-text" id='username' placeholder="用户名"></input>
+          </div>
+          <div class='form-group contain'>
+            <input type='password' class='form-control lg-text' id='userpass' placeholder='密码'></input>
+          </div>
+          <div class='form-group contain'>
+            <button id="btn-ok" class='btn btn-primary'>开始登陆</button>
+          </div>
+      </div>
     </div>
+    <%include modal.ejs %>
   </body>
 </html>

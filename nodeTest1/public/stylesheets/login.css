@@ -1,6 +1,6 @@
 body {
+	background: url('/images/5-120601095934.jpg');
   padding: 50px;
-  font: 14px "微软雅黑", Helvetica, Arial, sans-serif;
 }
 
 div.title {
@@ -19,9 +19,13 @@ div#sign-box {
 
 
 div.contain {
-	margin: 0px auto;
+	/*margin: 0px auto;*/
 	text-align: center;
-	width: 90%;
+	width: 100%;
+}
+
+.lg-text {
+	width:60%;
 }
 
 div#btn-ok {

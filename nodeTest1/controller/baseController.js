@@ -40,7 +40,7 @@ module.exports = {
 				return;
 			}
 			if (data.crash_type == 'c-crash') {
-				fread(data.stack_trace, 30, function(value) {
+				fread(data.stack_trace, 50, function(value) {
 					if (value) {
 						data.stack_trace = value;
 					} else {

@@ -2,8 +2,8 @@ $(function(){
 	$('#btn-ok').on('click',function() {
 		var time = new Date();
 		time = time.getTime();
-		var username = $("input[name='username']").val();
-		var password = $("input[name='userpass']").val();
+		var username = $("#username").val();
+		var password = $("#userpass").val();
 		password = $.md5(password);
 
 		var sign = $.md5(time + password);
@@ -20,12 +20,30 @@ $(function(){
 				if (data.result == 'OK') {
 					$(location).attr('href', '/');
 				} else {
-					alert('error account info!');
+					ShowModal('账号密码错误');
 				}
 			},
 			error:function() {
-				alert('sign in error!');
+				ShowModal('连接出错');
 			}
 		});
 	});
+	$('#sign-box').delegate('input', 'keypress', (event) => {
+		if (event.keyCode == 13) {
+			$('#btn-ok').trigger('click');
+		}
+	});
 });
+
+function ShowModal(text) {
+	$('#modal-text').text(text);
+	$('#myModal').on('show.bs.modal', function (e) {  
+		$(this).find('.modal-dialog').css({
+			'margin-top': function () {
+				var modalHeight = $('#myModal').find('.modal-dialog').height();
+				return ($(window).height() / 2 - (modalHeight / 2));
+			}
+		});
+	});
+	$('#myModal').modal('show');
+}
