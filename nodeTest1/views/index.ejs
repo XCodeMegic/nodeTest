@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><%= title %></title>
     <link rel="Shortcut Icon" href="favicon.ico" >
     <link rel="Bookmark" href="favicon.ico" >
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css' />
-    <script src="/jquery/jquery.min.js"></script>
+    <!--[if !IE]><!-->
+    <script src=/jquery/3.2.1/jquery.min.js></script>
+    <!--<![endif]-->
+    <!--[if lt IE 8]>
+    <script src=/jquery/1.9.1/jquery.min.js></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <script src=/jquery/3.2.1/jquery.min.js></script>
+    <![endif]-->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <script src='/javascripts/base.js'></script>
   </head>
@@ -38,7 +47,7 @@
           </div>
         </div>
         <hr/>
-        <div class='panel panel-primary pull-left' style='width:30%'>
+        <div class='panel panel-primary pull-left' style='width:16%'>
           <div class='panel-heading'>
             <h3 class='panel-title'>崩溃项</h3>
           </div>
@@ -46,9 +55,8 @@
             <table id='crash-info' class="table table-hover auto-hiden">
               <thead>
                 <tr>
-                  <th class="th-type">崩溃类别</th>
-                  <th class="th-type">程序版本</th>
-                  <th class="th-date">日期</th>
+                  <th class="th-type">类别</th>
+                  <th class="th-date">崩溃日期</th>
                 </tr>
               </thead>
               <tbody>
@@ -65,7 +73,7 @@
             </ul>
           </div>
         </div>
-        <div class='panel panel-primary pull-right' style='width:68%'>
+        <div class='panel panel-primary pull-right' style='width:82%'>
           <div class='panel-heading'>
             <h3 class='panel-title'>崩溃详细信息</h3>
           </div>
@@ -81,7 +89,7 @@
               </tbody>
             </table>
           </div>
-          <button id='btn-delete' type="button" class="btn btn-danger btn-lg btn-block btn-sm">删除</button>
+          <!-- <button id='btn-delete' type="button" class="btn btn-danger btn-lg btn-block btn-sm">删除</button> -->
         </div>
     </div>
     </div>

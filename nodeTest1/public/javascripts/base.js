@@ -9,7 +9,7 @@ $(function(){
 
 	$('#crash-info').delegate('tbody > tr', 'click', show_details);
 
-	$('#page-next').on('click', () => {
+	$('#page-next').on('click', function() {
 		var crash_type = $('#page-index').attr('data-type');
 		var index = parseInt($('#page-index').attr('data-index'));
 		var count = parseInt($('#page-index').attr('data-count'));
@@ -18,7 +18,7 @@ $(function(){
 		}
 	});
 
-	$('#page-last').on('click', () => {
+	$('#page-last').on('click', function() {
 		var crash_type = $('#page-index').attr('data-type');
 		var index = parseInt($('#page-index').attr('data-index'));
 		var count = parseInt($('#page-index').attr('data-count'));
@@ -27,7 +27,7 @@ $(function(){
 		}
 	});
 
-	$('#page-prev').on('click', () => {
+	$('#page-prev').on('click', function() {
 		var crash_type = $('#page-index').attr('data-type');
 		var index = parseInt($('#page-index').attr('data-index'));
 		var count = parseInt($('#page-index').attr('data-count'));
@@ -36,7 +36,7 @@ $(function(){
 		}
 	});
 
-	$('#page-first').on('click', () => {
+	$('#page-first').on('click', function() {
 		var crash_type = $('#page-index').attr('data-type');
 		var index = parseInt($('#page-index').attr('data-index'));
 		var count = parseInt($('#page-index').attr('data-count'));
@@ -114,8 +114,8 @@ function show_info(index, crash_type) {
 			var crashes = data;
 			for (var i = 0; i < crashes.length; i++) {
 				var crash = crashes[i];
-				var doc = '<tr class="auto-hiden" data-id="' + crash.id + '"><td>' + crash.crash_type + '</td>';
-				doc += '<td class="auto-hiden">' + crash.app_ver + '</td>' +
+				var doc = '<tr class="auto-hiden" data-id="' + crash.id + '"><td>' + crash.crash_type.replace(/-crash/,"") + '</td>';
+				doc += /*'<td class="auto-hiden">' + crash.app_ver + '</td>' +*/
 						'<td class="auto-hiden">' + crash.crash_date + '</td></tr>';
 				$('#crash-info > tbody').append(doc);
 			}

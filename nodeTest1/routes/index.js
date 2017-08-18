@@ -10,9 +10,9 @@ var session = require('express-session');
 router.get('/', function(req, res, next) {
 	if (!req.session.user) {
 		res.redirect('/users/login');
-	} else {
+	} /*else {
 		res.render('index', { title: 'CrashDisplay' });
-	 }
+	 }*/
 });
 
 router.post('/login', usrCtrl.handleUserlogin);

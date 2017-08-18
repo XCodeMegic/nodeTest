@@ -28,7 +28,7 @@ $(function(){
 			}
 		});
 	});
-	$('#sign-box').delegate('input', 'keypress', (event) => {
+	$('#sign-box').delegate('input', 'keypress', function(event) {
 		if (event.keyCode == 13) {
 			$('#btn-ok').trigger('click');
 		}
