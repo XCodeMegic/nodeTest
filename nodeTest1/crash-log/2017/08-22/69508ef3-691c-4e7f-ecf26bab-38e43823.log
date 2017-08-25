@@ -1,0 +1,1275 @@
+Operating system: Android
+                  0.0.0 Linux 3.4.0 #149 SMP PREEMPT Wed Mar 15 16:14:39 HKT 2017 armv7l
+CPU: arm
+     ARMv7 Qualcomm Krait features: swp,half,thumb,fastmult,vfpv2,edsp,neon,vfpv3,tls,vfpv4,idiva,idivt
+     2 CPUs
+
+GPU: UNKNOWN
+
+Crash reason:  SIGSEGV
+Crash address: 0x0
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libjnicrash.so!Java_com_longmaster_iptv_health_booter_mode_JTST_Crash [main.cpp : 8 + 0x3]
+     r0 = 0x1a002580    r1 = 0xdbd00019    r2 = 0x86267cc0    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7dc0ff00    lr = 0x85fa2760    pc = 0x14700d17
+    Found by: given as instruction pointer in context
+ 1  libhoudini.so + 0x6275e
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000    fp = 0x00000000
+     sp = 0x7dc0ff00    pc = 0x85fa2760
+    Found by: call frame info
+
+Thread 1
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 2
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 3
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 4
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 5
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 6
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 7
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 8
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 9
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 10
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 11
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 12
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 13
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 14
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 15
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 16
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 17
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 18
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 19
+ 0  libdvm.so + 0x3e6b5
+     r0 = 0x00000000    r1 = 0xbfd11b70    r2 = 0x00000000    r3 = 0xbfd11c7c
+     r4 = 0xb92073f0    r5 = 0xb772690d    r6 = 0xb4efbc58    r7 = 0xb4ded629
+     r8 = 0x954a0630    r9 = 0x00000000   r10 = 0x00000064   r12 = 0xb4efbc58
+     fp = 0xb4d2ca2c    sp = 0xb92073f0    lr = 0xb4f7233c    pc = 0xb4d276b5
+    Found by: given as instruction pointer in context
+ 1  dalvik-heap (deleted) + 0x6
+     sp = 0xb9207414    pc = 0x94fc0008
+    Found by: stack scanning
+ 2  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207428    pc = 0x94fc0000
+    Found by: stack scanning
+ 3  dalvik-heap (deleted) + 0xbd28ffe
+     sp = 0xb920742c    pc = 0xa0ce9000
+    Found by: stack scanning
+ 4  dalvik-heap (deleted) + 0x4e0ffe
+     sp = 0xb9207430    pc = 0x954a1000
+    Found by: stack scanning
+ 5  dalvik-zygote (deleted) + 0x6
+     sp = 0xb9207434    pc = 0x94ce9008
+    Found by: stack scanning
+ 6  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207448    pc = 0x94ce9000
+    Found by: stack scanning
+ 7  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb920744c    pc = 0x94fc0000
+    Found by: stack scanning
+ 8  dalvik-zygote (deleted) + 0x2d6ffe
+     sp = 0xb9207450    pc = 0x94fc0000
+    Found by: stack scanning
+ 9  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb920745c    pc = 0x94ce9000
+    Found by: stack scanning
+10  dalvik-mark-stack (deleted) + 0xaaaaffe
+     sp = 0xb9207464    pc = 0x93ce9000
+    Found by: stack scanning
+11  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207470    pc = 0x94ce9000
+    Found by: stack scanning
+12  dalvik-heap (deleted) + 0x4e082e
+     sp = 0xb9207474    pc = 0x954a0830
+    Found by: stack scanning
+13  dalvik-bitmap-2 (deleted) + 0x7ffffe
+     sp = 0xb9207478    pc = 0x944e9000
+    Found by: stack scanning
+14  dalvik-bitmap-1 (deleted) + 0x7ffffe
+     sp = 0xb9207484    pc = 0x94ce9000
+    Found by: stack scanning
+15  dalvik-bitmap-1 (deleted) + 0x7ffffd
+     sp = 0xb9207488    pc = 0x94ce8fff
+    Found by: stack scanning
+
+Thread 20
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 21
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 22
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 23
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 24
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 25
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 26
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 27
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 28
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 29
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Thread 30
+ 0  0x0
+     r0 = 0x00000000    r1 = 0x00000000    r2 = 0x00000000    r3 = 0x00000000
+     r4 = 0x00000000    r5 = 0x00000000    r6 = 0x00000000    r7 = 0x00000000
+     r8 = 0x00000000    r9 = 0x00000000   r10 = 0x00000000   r12 = 0x00000000
+     fp = 0x00000000    sp = 0x7d80ff00    lr = 0x00000000    pc = 0x00000000
+    Found by: given as instruction pointer in context
+
+Loaded modules:
+0x14000000 - 0x14021fff  libBugly.so  ???
+0x14100000 - 0x14103fff  liblog.so  ???  (WARNING: No symbols, , )
+0x14200000 - 0x1426cfff  libc.so  ???  (WARNING: No symbols, , )
+0x14300000 - 0x14302fff  libdl.so  ???  (WARNING: No symbols, , )
+0x14400000 - 0x14400fff  libstdc++.so  ???  (WARNING: No symbols, , )
+0x14408000 - 0x14409fff  libstdc++.so  ???  (WARNING: No symbols, , )
+0x14500000 - 0x14518fff  libm.so  ???  (WARNING: No symbols, , )
+0x14600000 - 0x14621fff  libbreakpad.so  ???
+0x14700000 - 0x14704fff  libjnicrash.so  ???
+0x7ea33000 - 0x7f125fff  data@app@com.longmaster.iptv.health.sichuanlt.debug-1.apk@classes.dex  ???
+0x7f663000 - 0x7f760fff  binder  ???  (WARNING: No symbols, , )
+0x7fb81000 - 0x80da7fff  icudt51l.dat  ???
+0x80da8000 - 0x80e2ffff  tzdata  ???
+0x80e30000 - 0x80e32fff  libwebviewchromium_plat_support.so  ???  (WARNING: No symbols, , )
+0x80e46000 - 0x80e46fff  libjnigraphics.so  ???
+0x80e47000 - 0x80e48fff  libjnigraphics.so  ???
+0x80e49000 - 0x80e8cfff  libwilhelm.so  ???
+0x80e92000 - 0x80ea5fff  libandroid.so  ???
+0x80eaa000 - 0x82876fff  libwebviewchromium.so  ???  (WARNING: No symbols, , )
+0x829c6000 - 0x829cffff  librs_jni.so  ???  (WARNING: No symbols, , )
+0x829d2000 - 0x82a04fff  libvideoeditorplayer.so  ???
+0x82a08000 - 0x82a0bfff  libvideoeditor_videofilters.so  ???
+0x82a0e000 - 0x82a14fff  libvideoeditor_osal.so  ???
+0x82a17000 - 0x82a82fff  libvideoeditor_core.so  ???
+0x82a85000 - 0x82a8bfff  libeffects.so  ???
+0x82a8e000 - 0x82a98fff  libnbaio.so  ???
+0x82a9b000 - 0x82aaefff  libcommon_time_client.so  ???
+0x82ab4000 - 0x82b16fff  libaudioflinger.so  ???
+0x82b1f000 - 0x82b3cfff  libvideoeditor_jni.so  ???
+0x82b41000 - 0x82b48fff  libffmpeg_utils.so  ???  (WARNING: No symbols, , )
+0x82b4b000 - 0x82d25fff  libavformat.so  ???  (WARNING: No symbols, , )
+0x82d31000 - 0x82d8efff  libavutil.so  ???  (WARNING: No symbols, , )
+0x82da0000 - 0x8380dfff  libavcodec.so  ???  (WARNING: No symbols, , )
+0x83dfe000 - 0x83e0afff  libFFmpegExtractor.so  ???  (WARNING: No symbols, , )
+0x83e0e000 - 0x83e1efff  libstagefright_amrnb_common.so  ???  (WARNING: No symbols, , )
+0x83e21000 - 0x83e30fff  libexif.so  ???  (WARNING: No symbols, , )
+0x83e35000 - 0x83e55fff  libmtp.so  ???  (WARNING: No symbols, , )
+0x83e59000 - 0x83e80fff  libvorbisidec.so  ???
+0x83e83000 - 0x83ea9fff  libstagefright_omx.so  ???
+0x83eae000 - 0x8405cfff  libstagefright.so  ???
+0x84066000 - 0x840c5fff  libmedia_jni.so  ???  (WARNING: No symbols, , )
+0x840cb000 - 0x840e7fff  Roboto-Regular.ttf  ???
+0x840e8000 - 0x8410afff  libdrmframework.so  ???
+0x84110000 - 0x8411afff  libdrmframework_jni.so  ???  (WARNING: No symbols, , )
+0x84989000 - 0x849a7fff  libjavacrypto.so  ???  (WARNING: No symbols, , )
+0x84a0f000 - 0x84aa1fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x84cb2000 - 0x85ed8fff  icudt51l.dat  ???
+0x85ed9000 - 0x85f3bfff  libjavacore.so  ???  (WARNING: No symbols, , )
+0x85f40000 - 0x86222fff  libhoudini.so  ???  (WARNING: No symbols, , )
+0x8640f000 - 0x864bafff  system@framework@webviewchromium.jar@classes.dex  ???
+0x864bd000 - 0x864befff  libOpenSLES.so  ???
+0x864c1000 - 0x864cafff  libstagefright_avc_common.so  ???
+0x864cd000 - 0x864e4fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x864e5000 - 0x86635fff  system@framework@apache-xml.jar@classes.dex  ???
+0x86638000 - 0x8663cfff  libexif_jni.so  ???  (WARNING: No symbols, , )
+0x86640000 - 0x86640fff  libstagefright_enc_common.so  ???
+0x86641000 - 0x86642fff  libstagefright_enc_common.so  ???
+0x86643000 - 0x86646fff  libpowermanager.so  ???
+0x86649000 - 0x86681fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x86682000 - 0x869ddfff  system@framework@services.jar@classes.dex  ???
+0x869de000 - 0x86a1cfff  system@framework@android.policy.jar@classes.dex  ???
+0x86a1d000 - 0x86a3cfff  system@framework@mms-common.jar@classes.dex  ???
+0x86a3d000 - 0x86a67fff  system@framework@voip-common.jar@classes.dex  ???
+0x86a68000 - 0x86a80fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x86a81000 - 0x86bbdfff  system@framework@telephony-common.jar@classes.dex  ???
+0x86bbf000 - 0x86bc1fff  libstagefright_yuv.so  ???
+0x86bc4000 - 0x86bc5fff  libconnectivitymanager.so  ???
+0x86bd0000 - 0x86bf6fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x86bf7000 - 0x86d7dfff  system@framework@framework2.jar@classes.dex  ???
+0x86d80000 - 0x86e42fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x86e43000 - 0x8775afff  system@framework@framework.jar@classes.dex  ???
+0x8775b000 - 0x87777fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x87778000 - 0x878e8fff  system@framework@ext.jar@classes.dex  ???
+0x87906000 - 0x8791efff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x8791f000 - 0x87a2ffff  system@framework@bouncycastle.jar@classes.dex  ???
+0x87a30000 - 0x87a34fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x87a35000 - 0x87a69fff  system@framework@okhttp.jar@classes.dex  ???
+0x87a6a000 - 0x87ac5fff  system@framework@conscrypt.jar@classes.dex  ???
+0x87acc000 - 0x87acefff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x87ad0000 - 0x87ad3fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x87ad7000 - 0x87b0dfff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x87b0e000 - 0x87e24fff  system@framework@core.jar@classes.dex  ???
+0x87e26000 - 0x87e2cfff  system@framework@core-junit.jar@classes.dex  ???
+0x87e2f000 - 0x87e36fff  dalvik-aux-structure (deleted)  ???  (WARNING: No symbols, , )
+0x87e37000 - 0x88e36fff  dalvik-LinearAlloc (deleted)  ???  (WARNING: No symbols, , )
+0x88e3d000 - 0x8923dfff  dalvik-card-table (deleted)  ???  (WARNING: No symbols, , )
+0x8923e000 - 0x93ce8fff  dalvik-mark-stack (deleted)  ???  (WARNING: No symbols, , )
+0x93ce9000 - 0x944e8fff  dalvik-bitmap-2 (deleted)  ???  (WARNING: No symbols, , )
+0x944e9000 - 0x94ce8fff  dalvik-bitmap-1 (deleted)  ???  (WARNING: No symbols, , )
+0x94ce9000 - 0x94fbffff  dalvik-zygote (deleted)  ???  (WARNING: No symbols, , )
+0x94fc0000 - 0xb4ce8fff  dalvik-heap (deleted)  ???  (WARNING: No symbols, , )
+0xb4ce9000 - 0xb4ef7fff  libdvm.so  ???  (WARNING: No symbols, libdvm.so, 7FA6D81B8F7B7764D6CDCFE4DECFFD5F0)
+0xb522c000 - 0xb524bfff  __properties__  ???  (WARNING: No symbols, , )
+0xb524c000 - 0xb5275fff  libRScpp.so  ???
+0xb5278000 - 0xb60aefff  libLLVM.so  ???
+0xb60f5000 - 0xb614ffff  libbcinfo.so  ???
+0xb6152000 - 0xb6185fff  libbcc.so  ???
+0xb61a9000 - 0xb61f8fff  libRS.so  ???
+0xb61fc000 - 0xb627cfff  libhwui.so  ???
+0xb6281000 - 0xb62e0fff  libharfbuzz_ng.so  ???
+0xb62e3000 - 0xb62e6fff  libusbhost.so  ???
+0xb62e9000 - 0xb62eefff  libspeexresampler.so  ???
+0xb62f1000 - 0xb62f3fff  libaudioutils.so  ???
+0xb62f7000 - 0xb6316fff  libstagefright_foundation.so  ???
+0xb631a000 - 0xb63effff  libmedia.so  ???
+0xb6409000 - 0xb645efff  libssl.so  ???
+0xb6466000 - 0xb65bcfff  libcrypto.so  ???
+0xb65d2000 - 0xb662cfff  libsonivox.so  ???
+0xb6635000 - 0xb6649fff  libselinux.so  ???
+0xb664c000 - 0xb664efff  libwpa_client.so  ???
+0xb6651000 - 0xb6657fff  libhardware_legacy.so  ???
+0xb665b000 - 0xb665efff  libETC1.so  ???
+0xb6661000 - 0xb6668fff  libGLESv1_CM.so  ???
+0xb666b000 - 0xb673efff  libsqlite.so  ???
+0xb6742000 - 0xb698ffff  libicui18n.so  ???
+0xb6999000 - 0xb699dfff  libgabi++.so  ???
+0xb69a0000 - 0xb6b5cfff  libicuuc.so  ???
+0xb6b6d000 - 0xb6bb4fff  libjpeg.so  ???
+0xb6bb8000 - 0xb6bdcfff  libpng.so  ???
+0xb6bdf000 - 0xb6c59fff  libft2.so  ???
+0xb6c5e000 - 0xb70a1fff  libskia.so  ???
+0xb70bc000 - 0xb70c2fff  libcamera_metadata.so  ???
+0xb70c5000 - 0xb710dfff  libcamera_client.so  ???
+0xb7119000 - 0xb7141fff  libinput.so  ???
+0xb7145000 - 0xb714efff  libGLESv2.so  ???
+0xb7151000 - 0xb71f4fff  libGLES_trace.so  ???
+0xb71f7000 - 0xb7290fff  libEGL.so  ???
+0xb729c000 - 0xb7303fff  libgui.so  ???
+0xb730f000 - 0xb730ffff  libsync.so  ???
+0xb7310000 - 0xb7311fff  libsync.so  ???
+0xb7312000 - 0xb7328fff  libui.so  ???
+0xb732c000 - 0xb7336fff  libnetutils.so  ???
+0xb733a000 - 0xb73b2fff  libstlport.so  ???
+0xb73b6000 - 0xb73bcfff  libnativehelper.so  ???
+0xb73bf000 - 0xb73eefff  libexpat.so  ???
+0xb73f3000 - 0xb740efff  libz.so  ???
+0xb7411000 - 0xb7457fff  libandroidfw.so  ???
+0xb745b000 - 0xb745bfff  libhardware.so  ???
+0xb745c000 - 0xb745dfff  libhardware.so  ???
+0xb745e000 - 0xb745efff  libmemtrack.so  ???
+0xb745f000 - 0xb7460fff  libmemtrack.so  ???
+0xb746d000 - 0xb760afff  libandroid_runtime.so  ???
+0xb7625000 - 0xb766dfff  libbinder.so  ???
+0xb7676000 - 0xb7684fff  libgccdemangle.so  ???
+0xb7687000 - 0xb7691fff  libcorkscrew.so  ???
+0xb7694000 - 0xb76bbfff  libutils.so  ???
+0xb76bf000 - 0xb76e1fff  libm.so  ???
+0xb76e4000 - 0xb76e5fff  libstdc++.so  ???
+0xb76e8000 - 0xb7785fff  libc.so  ???
+0xb779a000 - 0xb779ffff  liblog.so  ???
+0xb77a2000 - 0xb77b3fff  libcutils.so  ???
+0xb77ba000 - 0xb77bafff  linux-gate.so  ???
+0xb77bb000 - 0xb77dbfff  linker  ???
+0xb77eb000 - 0xb77ecfff  app_process  ???  (main)

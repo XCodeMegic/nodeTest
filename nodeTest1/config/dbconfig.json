@@ -1,6 +1,8 @@
 {
 	"dbserver":"127.0.0.1",
+	"dbport":"3306",
 	"dbuser":"root",
 	"dbpass":"longmaster",
-	"dbname":"db_crash"
+	"dbname":"db_crash",
+	"tablename":"t_crash_info"
 }

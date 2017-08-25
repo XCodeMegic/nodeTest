@@ -5,14 +5,15 @@ var fs = require('fs');
 var db = require('../DB/dbmanager');
 var fread = require('./fileController').readfile;
 var fdrop = require('./fileController').deleteFile;
+var filecfg = require('../config/dumpFileInfo');
 
 module.exports = {
 	handleInfoCount : function(req, res, next) {
 		var search_type = req.body.search_type;
 		if (search_type == 0) {
-			search_type = 'java-crash';
+			search_type = 'java';
 		} else if (search_type == 1) {
-			search_type = 'c-crash';
+			search_type = 'jni';
 		}
 		db.queryCrashInfoCount(search_type, function(data) {
 			res.send({'count':data});
@@ -23,9 +24,9 @@ module.exports = {
 		var search_type = req.body.search_type;
 		var search_page = req.body.pageno;
 		if (search_type == 0) {
-			search_type = 'java-crash';
+			search_type = 'java';
 		} else if (search_type == 1) {
-			search_type = 'c-crash';
+			search_type = 'jni';
 		}
 		db.queryCrashInfo(search_type, search_page, function(data) {
 				res.send(data);
@@ -39,7 +40,7 @@ module.exports = {
 				res.send(404,'Sorry, we cannot find that!');
 				return;
 			}
-			if (data.crash_type == 'c-crash') {
+			if (data.crash_type == 'jni') {
 				fread(data.stack_trace, 50, function(value) {
 					if (value) {
 						data.stack_trace = value;
@@ -61,7 +62,7 @@ module.exports = {
 		form.parse(req, function(err, fields, files) {
 			var json = fields.json;
 			json = JSON.parse(json);
-			json.crash_type = 'java-crash';
+			json.crash_type = 'java';
 			json.dumpfile = '';
 
 			db.insertCrash(json);
@@ -69,8 +70,8 @@ module.exports = {
 	},
 
 	handleInsert_CCrash : function(req, res, next) {
-		var tmpFilePath = checkTempDir('temp');
-		var crashFilePath = checkTempDir('crash-log');
+		var tmpFilePath = checkTempDir(filecfg.dumpfile);
+		var crashFilePath = checkTempDir(filecfg.dumptext);
 
 		var form = new formidable.IncomingForm();
 		form.encoding = 'utf-8';
@@ -86,11 +87,11 @@ module.exports = {
 					var logFile = crashFilePath + getFileName(files.file.name) + '.log';
 					var json = fields.json;
 					json = JSON.parse(json);
-					json.crash_type = 'c-crash';
+					json.crash_type = 'jni';
 					json.stack_trace = logFile;
 					json.dumpfile = files.file.name;
 					console.log(json);
-					exec('tools/perform.sh ' + tmpFilePath + files.file.name + ' ' + logFile, {maxBuffer:10*5000*20*1024}, function(err, stdout, stderr) {
+					exec(__dirname + '/../tools/perform.sh ' + tmpFilePath + files.file.name + ' ' + logFile, {maxBuffer:10*5000*20*1024}, function(err, stdout, stderr) {
 						if (err) {
 							throw err;
 						}
@@ -107,7 +108,7 @@ module.exports = {
 		db.queryCrashDetail(id, function(data) {
 			if (data != null) {
 				db.deleteInfo(id);
-				if (data.crash_type == 'c-crash') {
+				if (data.crash_type == 'jni') {
 					var filename = data.stack_trace;
 					fdrop(filename, null);
 				}
@@ -123,13 +124,13 @@ function checkTempDir(rootdir) {
 	month = month < 10 ? ('0' + month) : month;
 	var day = mydate.getDate();
 	day = day < 10 ? ('0' + day) : day;
-	if (!fs.existsSync('./' + rootdir + '/')) {
-		fs.mkdirSync('./' + rootdir + '/');
+	if (!fs.existsSync(rootdir)) {
+		fs.mkdirSync(rootdir);
 	}
-	if (!fs.existsSync('./' + rootdir + '/' + mydate.getFullYear())) {
-		fs.mkdirSync('./' + rootdir + '/' + mydate.getFullYear());
+	if (!fs.existsSync(rootdir + mydate.getFullYear())) {
+		fs.mkdirSync(rootdir + mydate.getFullYear());
 	}
-	var tmpdir = './' + rootdir + '/' + mydate.getFullYear() + '/' + month + '-' + day + '/';
+	var tmpdir = rootdir + mydate.getFullYear() + '/' + month + '-' + day + '/';
 	if (!fs.existsSync(tmpdir)) {
 		fs.mkdirSync(tmpdir);
 	}
